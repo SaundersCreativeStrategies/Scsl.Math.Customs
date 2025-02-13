@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <RootNamespace>Scsl.Math.Customs</RootNamespace>
+    <PackageId>Scsl.Math.Customs</PackageId>
+    <AssemblyName>Scsl.Math.Customs</AssemblyName>
+    <AssemblyTitle>Scsl.Math.Customs</AssemblyTitle>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <Version>8.0.0</Version>
+    <AssemblyVersion>8.0.0</AssemblyVersion>
+    <FileVersion>8.0.0.0</FileVersion>
+    <InformationalVersion>8.0.0</InformationalVersion>
+  </PropertyGroup>
+  
+  <Target Name="BeforeBuildActions" BeforeTargets="BeforeBuild" Condition="'$(Configuration)' == 'Debug'">
+    <Task.BuildVersion BaseVersion="$(Version)">
+      <Output TaskParameter="FileVersion" PropertyName="FileVersion" />
+      <Output TaskParameter="AssemblyVersion" PropertyName="AssemblyVersion" />
+      <Output TaskParameter="ProductVersion" PropertyName="ProductVersion" />
+    </Task.BuildVersion>
+    <PropertyGroup>
+      <Version>$(ProductVersion)</Version>
+      <FileVersion>$(FileVersion)</FileVersion>
+      <AssemblyVersion>$(ProductVersion)</AssemblyVersion>
+      <InformationalVersion>$(ProductVersion)</InformationalVersion>
+    </PropertyGroup>
+  </Target>
+  
+  <Target Name="AfterBuildActions" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'Debug'">
+    <XmlPoke XmlInputPath="$(MSBuildProjectFile)" Query="(//PropertyGroup/Version)[1]" Value="$(ProductVersion)" />
+    <XmlPoke XmlInputPath="$(MSBuildProjectFile)" Query="(//PropertyGroup/FileVersion)[1]" Value="$(FileVersion)" />
+    <XmlPoke XmlInputPath="$(MSBuildProjectFile)" Query="(//PropertyGroup/AssemblyVersion)[1]" Value="$(ProductVersion)" />
+    <XmlPoke XmlInputPath="$(MSBuildProjectFile)" Query="(//PropertyGroup/InformationalVersion)[1]" Value="$(ProductVersion)" />
+  </Target>
+</Project>

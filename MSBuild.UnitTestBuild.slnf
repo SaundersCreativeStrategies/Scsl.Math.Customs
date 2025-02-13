@@ -1,0 +1,9 @@
+{
+    "solution": {
+        "path": "Scsl.Math.Customs.sln",
+        "projects": [
+            "src\\Scsl.Math.Customs\\Scsl.Math.Customs.csproj",
+			"tests\\Scsl.Math.Customs.UnitTest\\Scsl.Math.Customs.UnitTest.csproj"
+        ]
+    }
+}
