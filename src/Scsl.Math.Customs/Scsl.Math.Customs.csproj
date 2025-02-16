@@ -27,6 +27,14 @@
     <PackageReference Include="Serilog.Sinks.SQLite" Version="6.0.0" />
   </ItemGroup>
   
+  <ItemGroup>
+    <ProjectReference Include="..\Scsl.Common\Scsl.Common.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="Math\Customs\" />
+  </ItemGroup>
+  
   <Target Name="BeforeBuildActions" BeforeTargets="BeforeBuild" Condition="'$(Configuration)' == 'Debug'">
     <Task.BuildVersion BaseVersion="$(Version)">
       <Output TaskParameter="FileVersion" PropertyName="FileVersion" />
