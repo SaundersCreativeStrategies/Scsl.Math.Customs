@@ -16,4 +16,9 @@
     <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Scsl.Common\Scsl.Common.csproj" />
+    <ProjectReference Include="..\..\src\Scsl.Math.Customs\Scsl.Math.Customs.csproj" />
+  </ItemGroup>
+
 </Project>
