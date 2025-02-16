@@ -1,4 +1,4 @@
-namespace Scsl.Math.Customs.Logging;
+namespace Scsl.Logging;
 
 public interface ILoggerService
 {

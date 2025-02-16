@@ -1,6 +1,6 @@
 using Serilog;
 
-namespace Scsl.Math.Customs.Logging;
+namespace Scsl.Logging;
 
 public class LoggerService : ILoggerService
 {
