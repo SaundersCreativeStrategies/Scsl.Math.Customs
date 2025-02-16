@@ -5,105 +5,105 @@ namespace Scsl.Enums;
 public enum AlcoholByVolume
 {
     [DisplayName("0.5%")]
-    HalfProof = 1,
+    HalfPercent = 1,
     [DisplayName("1%")]
-    OneProof = 2,
+    OnePercent = 2,
     [DisplayName("2%")]
-    TwoProof = 4,
+    TwoPercent = 4,
     [DisplayName("3%")]
-    ThreeProof = 6,
+    ThreePercent = 6,
     [DisplayName("4%")]
-    FourProof = 8,
+    FourPercent = 8,
     [DisplayName("5%")]
-    FiveProof = 10,
+    FivePercent = 10,
     [DisplayName("6%")]
-    SixProof = 12,
+    SixPercent = 12,
     [DisplayName("7%")]
-    SevenProof = 14,
+    SevenPercent = 14,
     [DisplayName("8%")]
-    EightProof = 16,
+    EightPercent = 16,
     [DisplayName("9%")]
-    NineProof = 18,
+    NinePercent = 18,
     [DisplayName("10%")]
-    TenProof = 20,
+    TenPercent = 20,
     [DisplayName("11%")]
-    ElevenProof = 22,
+    ElevenPercent = 22,
     [DisplayName("12%")]
-    TwelveProof = 24,
+    TwelvePercent = 24,
     [DisplayName("13%")]
-    ThirteenProof = 26,
+    ThirteenPercent = 26,
     [DisplayName("14%")]
-    FourteenProof = 28,
+    FourteenPercent = 28,
     [DisplayName("15%")]
-    FifteenProof = 30,
+    FifteenPercent = 30,
     [DisplayName("16%")]
-    SixteenProof = 32,
+    SixteenPercent = 32,
     [DisplayName("17%")]
-    SeventeenProof = 34,
+    SeventeenPercent = 34,
     [DisplayName("18%")]
-    EighteenProof = 36,
+    EighteenPercent = 36,
     [DisplayName("19%")]
-    NineteenProof = 38,
+    NineteenPercent = 38,
     [DisplayName("20%")]
-    TwentyProof = 40,
+    TwentyPercent = 40,
     [DisplayName("21%")]
-    TwentyOneProof = 42,
+    TwentyOnePercent = 42,
     [DisplayName("22%")]
-    TwentyTwoProof = 44,
+    TwentyTwoPercent = 44,
     [DisplayName("23%")]
-    TwentyThreeProof = 46,
+    TwentyThreePercent = 46,
     [DisplayName("24%")]
-    TwentyFourProof = 48,
+    TwentyFourPercent = 48,
     [DisplayName("25%")]
-    TwentyFiveProof = 50,
+    TwentyFivePercent = 50,
     [DisplayName("26%")]
-    TwentySixProof = 52,
+    TwentySixPercent = 52,
     [DisplayName("27%")]
-    TwentySevenProof = 54,
+    TwentySevenPercent = 54,
     [DisplayName("28%")]
-    TwentyEightProof = 56,
+    TwentyEightPercent = 56,
     [DisplayName("29%")]
-    TwentyNineProof = 58,
+    TwentyNinePercent = 58,
     [DisplayName("30%")]
-    ThirtyProof = 60,
+    ThirtyPercent = 60,
     [DisplayName("31%")]
-    ThirtyOneProof = 62,
+    ThirtyOnePercent = 62,
     [DisplayName("32%")]
-    ThirtyTwoProof = 64,
+    ThirtyTwoPercent = 64,
     [DisplayName("33%")]
-    ThirtyThreeProof = 66,
+    ThirtyThreePercent = 66,
     [DisplayName("34%")]
-    ThirtyFourProof = 68,
+    ThirtyFourPercent = 68,
     [DisplayName("35%")]
-    ThirtyFiveProof = 70,
+    ThirtyFivePercent = 70,
     [DisplayName("36%")]
-    ThirtySixProof = 72,
+    ThirtySixPercent = 72,
     [DisplayName("37%")]
-    ThirtySevenProof = 74,
+    ThirtySevenPercent = 74,
     [DisplayName("38%")]
-    ThirtyEightProof = 76,
+    ThirtyEightPercent = 76,
     [DisplayName("39%")]
-    ThirtyNineProof = 78,
+    ThirtyNinePercent = 78,
     [DisplayName("40%")]
-    FortyProof = 80,
+    FortyPercent = 80,
     [DisplayName("41%")]
-    FortyOneProof = 82,
+    FortyOnePercent = 82,
     [DisplayName("42%")]
-    FortyTwoProof = 84,
+    FortyTwoPercent = 84,
     [DisplayName("43%")]
-    FortyThreeProof = 86,
+    FortyThreePercent = 86,
     [DisplayName("44%")]
-    FortyFourProof = 88,
+    FortyFourPercent = 88,
     [DisplayName("45%")]
-    FortyFiveProof = 90,
+    FortyFivePercent = 90,
     [DisplayName("46%")]
-    FortySixProof = 92,
+    FortySixPercent = 92,
     [DisplayName("47%")]
-    FortySevenProof = 94,
+    FortySevenPercent = 94,
     [DisplayName("48%")]
-    FortyEightProof = 96,
+    FortyEightPercent = 96,
     [DisplayName("49%")]
-    FortyNineProof = 98,
+    FortyNinePercent = 98,
     [DisplayName("50%")]
-    FiftyProof = 100
+    FiftyPercent = 100
 }
