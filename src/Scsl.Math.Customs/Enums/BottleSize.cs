@@ -15,7 +15,10 @@ public enum BottleSize
 
     [DisplayName("330ml")]
     BottleSize330Ml = 330,
-
+    
+    [DisplayName("355ml")]
+    BottleSize355Ml = 355,
+    
     [DisplayName("375ml")]
     BottleSize375Ml = 375,
 
