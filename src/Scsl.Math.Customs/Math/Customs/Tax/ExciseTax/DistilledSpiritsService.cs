@@ -60,7 +60,7 @@ public class DistilledSpiritsService : IDistilledSpiritsService
         int totalBottles = request.NumberOfCases * request.NumberBottlesPerCase;
         decimal liter = (decimal)request.BottleSize / 1000m;
         decimal proof = (decimal)request.AlcoholByVolume / 100m;
-        decimal specificTaxRate = ComputeSpecificTax(DateTime.UtcNow.Year);
+        decimal specificTaxRate = TaxCalculator.ComputeSpecificTax(DateTime.UtcNow.Year, 66.00m, 0.06m);
         
         // Compute the net retail price per liter
         decimal nrpPerLiter = System.Math.Round(request.NetRetailPrice / liter, 2);
@@ -78,15 +78,5 @@ public class DistilledSpiritsService : IDistilledSpiritsService
         decimal exciseTax = proofLiters * adValormTax;
         
         return new (System.Math.Round(exciseTax, 2));
-    }
-
-    private decimal ComputeSpecificTax(int year)
-    {
-        const decimal baseAmount = 66.00m;
-        const decimal increaseRate = 0.06m;
-        int yearsSince2024 = year - 2024;
-        
-        decimal taxRate = System.Math.Round(baseAmount * (decimal)System.Math.Pow((double)(1 + increaseRate), yearsSince2024), 2);
-        return taxRate;
     }
 }
