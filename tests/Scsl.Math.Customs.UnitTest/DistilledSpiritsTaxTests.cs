@@ -108,20 +108,12 @@ public sealed class DistilledSpiritsTaxTests
         int totalBottles = request.NumberOfCases * request.NumberBottlesPerCase;
         decimal liter = (decimal)request.BottleSize / 1000m;
         decimal proof = (decimal)request.AlcoholByVolume / 100m;
-        decimal specificTaxRate = ComputeSpecificTax(DateTime.UtcNow.Year);
+        decimal specificTaxRate = TaxCalculator.ComputeSpecificTax(DateTime.UtcNow.Year, 66.00m,0.06m);
         decimal nrpPerLiter = System.Math.Round(request.NetRetailPrice / liter, 2);
         decimal grossLiters = System.Math.Round(totalBottles * liter, 2);
         decimal proofLiters = System.Math.Round(grossLiters * proof, 2);
         decimal adValoremTax = System.Math.Round((nrpPerLiter * ((decimal)request.AdValoremTaxRate / 100m)) + specificTaxRate, 4);
         decimal exciseTax = proofLiters * adValoremTax;
         return System.Math.Round(exciseTax, 2);
-    }
-    
-    private decimal ComputeSpecificTax(int year)
-    {
-        const decimal baseAmount = 66.00m;
-        const decimal increaseRate = 0.06m;
-        int yearsSince2024 = year - 2024;
-        return System.Math.Round(baseAmount * (decimal)System.Math.Pow((double)(1 + increaseRate), yearsSince2024), 2);
     }
 }
