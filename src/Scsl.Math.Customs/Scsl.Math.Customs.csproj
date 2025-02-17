@@ -11,10 +11,10 @@
     <AssemblyTitle>Scsl.Math.Customs</AssemblyTitle>
   </PropertyGroup>
   <PropertyGroup>
-    <Version>8.0.12</Version>
-    <AssemblyVersion>8.0.12</AssemblyVersion>
-    <FileVersion>8.0.12.9178</FileVersion>
-    <InformationalVersion>8.0.12</InformationalVersion>
+    <Version>8.0.13</Version>
+    <AssemblyVersion>8.0.13</AssemblyVersion>
+    <FileVersion>8.0.13.9178</FileVersion>
+    <InformationalVersion>8.0.13</InformationalVersion>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\Scsl.Common\Scsl.Common.csproj" />
